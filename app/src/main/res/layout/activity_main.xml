@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Título "Notas" -->
     <TextView
         android:id="@+id/noteHeading"
         android:layout_width="wrap_content"
@@ -18,13 +19,29 @@
         android:textColor="@color/orange"
         android:textSize="24sp" />
 
+    <!-- Caixa de Pesquisa -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteHeading"
+        android:layout_margin="16dp"
+        android:background="@drawable/orange_border"
+        android:queryHint="Pesquisar..."
+        android:iconifiedByDefault="false"
+        android:textColor="@color/orange"
+        android:textColorHint="@color/orange"
+        android:layout_marginTop="12dp" />
+
+    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/noteRecycleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="58dp"
+        android:layout_below="@id/searchView"
         android:padding="16dp" />
 
+    <!-- Botão flutuante para adicionar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
