@@ -1,4 +1,4 @@
-# NEasyTask
+# EasyTask
 
 Este é um projeto Android simples que permite aos utilizadores adicionar, editar e eliminar notas. A aplicação oferece uma maneira prática de gerir notas pessoais, proporcionando a flexibilidade de modificar ou eliminar as notas conforme necessário.
 
