@@ -2,6 +2,8 @@ package com.example.notesqllite
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.widget.SearchView
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.notesqllite.databinding.ActivityMainBinding
@@ -32,11 +34,40 @@ class MainActivity : AppCompatActivity() {
         // Configurar a RecyclerView com um layout linear e o adaptador
         binding.noteRecycleView.layoutManager = LinearLayoutManager(this)
         binding.noteRecycleView.adapter = noteAdapter
+        binding.searchView
 
         // Configurar o botão de adicionar nota para abrir a atividade de adição de notas
         binding.addButton.setOnClickListener {
             val intent = Intent(this, AddNote::class.java)
             startActivity(intent)
+        }
+
+        //Let  o texto que foi escrito na barra de pesquisa
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                // Caso nao tenha sido pesquisado nada
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                // Caso tenha pesquisado alguma coisa
+                filterNotes(newText)
+                return true
+            }
+        })
+
+    }
+
+    private fun filterNotes(query: String?) {
+        if (query.isNullOrEmpty()) {
+            // Se estivr vazio vai mostrar todas as notas
+            noteAdapter.refreshData(db.getALLNOtes())
+        } else {
+            // Filtrar as notas que tenham sido pesquisadas
+            val filteredNotes = db.getALLNOtes().filter { note ->
+                note.titile.contains(query, ignoreCase = true)
+            }
+            noteAdapter.refreshData(filteredNotes)
         }
     }
 

@@ -20,6 +20,16 @@
         android:textSize="24sp" />
 
     <!-- Caixa de Pesquisa -->
+
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noteRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        android:padding="16dp" />
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
@@ -32,14 +42,6 @@
         android:textColor="@color/orange"
         android:textColorHint="@color/orange"
         android:layout_marginTop="12dp" />
-
-    <!-- RecyclerView -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/noteRecycleView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/searchView"
-        android:padding="16dp" />
 
     <!-- Botão flutuante para adicionar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
