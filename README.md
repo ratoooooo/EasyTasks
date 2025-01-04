@@ -1,4 +1,4 @@
-# Nota Manager
+# NEasyTask
 
 Este é um projeto Android simples que permite aos utilizadores adicionar, editar e eliminar notas. A aplicação oferece uma maneira prática de gerir notas pessoais, proporcionando a flexibilidade de modificar ou eliminar as notas conforme necessário.
 
@@ -22,11 +22,16 @@ Este é um projeto Android simples que permite aos utilizadores adicionar, edita
 3. Compile e execute a aplicação no seu dispositivo ou emulador Android.
 4. Utilize a interface para adicionar, editar e eliminar notas.
 
+
 ## Requisitos
 
 - Android Studio.
 - Dispositivo Android ou emulador.
 - Conhecimentos básicos de Kotlin e Android.
+
+## APK da aplicação
+
+APK download: <https://drive.google.com/drive/folders/1O__DUJf-ayARP57DGVOaJjGjES8oR8MO?hl=pt-br>
 
 ## Licença
 
