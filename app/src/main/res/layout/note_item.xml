@@ -14,47 +14,49 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <RelativeLayout
+        <!-- Linha para o título e os ícones -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
 
+            <!-- Título -->
             <TextView
                 android:id="@+id/titleView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="Titulo"
                 android:textColor="@color/orange"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
 
+            <!-- Ícone de editar -->
             <ImageView
                 android:id="@+id/updateButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:src="@drawable/baseline_edit_24"
-                />
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/baseline_edit_24" />
 
+            <!-- Ícone de apagar -->
             <ImageView
                 android:id="@+id/deleteButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/baseline_delete_24"
-                />
+                android:src="@drawable/baseline_delete_24" />
+        </LinearLayout>
 
-        </RelativeLayout>
-
+        <!-- Descrição -->
         <TextView
             android:id="@+id/contentTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Descrição"
             android:maxLines="3"
-            android:layout_marginTop="4dp" />
-
+            android:layout_marginTop="8dp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
