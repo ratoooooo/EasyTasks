@@ -1,6 +1,6 @@
 # EasyTask
 
-Este é um projeto Android simples que permite aos utilizadores adicionar, editar e eliminar notas. A aplicação oferece uma maneira prática de gerir notas pessoais, proporcionando a flexibilidade de modificar ou eliminar as notas conforme necessário.
+Este é um projeto Android simples que permite aos utilizadores adicionar, editar, eliminar e pesquisar notas. A aplicação oferece uma maneira prática de gerir notas pessoais, proporcionando flexibilidade para modificar, eliminar ou encontrar rapidamente as notas desejadas.
 
 ## Funcionalidades
 
@@ -8,6 +8,7 @@ Este é um projeto Android simples que permite aos utilizadores adicionar, edita
 - **Editar nota**: Os utilizadores podem alterar o título ou o conteúdo de uma nota existente.
 - **Eliminar nota**: É possível eliminar notas a qualquer momento.
 - **Visualizar notas**: A lista de notas é apresentada de forma clara, permitindo que o utilizador visualize todas as suas notas armazenadas.
+- **Pesquisar notas**: Permite ao utilizador procurar notas específicas através do título.
 
 ## Tecnologias
 
@@ -20,8 +21,7 @@ Este é um projeto Android simples que permite aos utilizadores adicionar, edita
 1. Clone este repositório no seu ambiente local.
 2. Abra o projeto no Android Studio.
 3. Compile e execute a aplicação no seu dispositivo ou emulador Android.
-4. Utilize a interface para adicionar, editar e eliminar notas.
-
+4. Utilize a interface para adicionar, editar, eliminar ou pesquisar notas.
 
 ## Requisitos
 
